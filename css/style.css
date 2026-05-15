@@ -140,4 +140,11 @@ header {
         padding: 5px 15px;
     }
     
+    
+}
+
+@media (max-width: 400px) {
+    .project-card a {
+        margin: auto 20px 0;
+    }
 }
