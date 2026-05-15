@@ -1,0 +1,80 @@
+/* общие стили для всей страницы*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* стили для заголовков */
+h1, h2 {
+    color:#4caf50;
+}
+
+/* стили для ссылок */
+a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0067ff;
+}
+
+/* стили для списков */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* стили для карточек */
+.project-card {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card a {
+    margin-top: auto;
+}
+
+/* стили для общего контейнера */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* стили для подвала */
+.main-footer {
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #444;
+    padding: 20px;
+}
+
+/* стили для враппера */
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 20px;
+}
+
+/* стили для хэдера */
+header {
+    text-align: center;
+    margin: 40px 30px;
+    border-bottom: 1px solid #444;
+}
