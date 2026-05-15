@@ -16,10 +16,11 @@ h1, h2 {
 a {
     color: #ff9800;
     text-decoration: none;
+    transition: 0.2s ease;
 }
 
 a:hover {
-    color: #0067ff;
+    color: #cc7000;
 }
 
 /* стили для списков */
@@ -43,10 +44,25 @@ li {
     min-width: 300px;
     display: flex;
     flex-direction: column;
+    transition: background-color 0.3s ease;
 }
 
 .project-card a {
     margin-top: auto;
+    border: 1px solid #ff9811;
+    padding: 5px;
+    margin: auto 100px;
+    border-radius: 30px;
+    text-align: center; 
+}
+
+.project-card a:hover{
+    background-color: #ff9800;
+    color: #1a1a1a;
+}
+
+.project-card:hover {
+    background-color: #222;
 }
 
 /* стили для общего контейнера */
@@ -57,12 +73,20 @@ li {
     align-items: stretch;
 }
 
+.project-card i {
+    margin-right: 7px;
+}
+
 /* стили для подвала */
 .main-footer {
     text-align: center;
     margin-top: 50px;
     border-top: 1px solid #444;
     padding: 20px;
+}
+
+.main-footer i {
+    margin-right: 7px;
 }
 
 /* стили для враппера */
