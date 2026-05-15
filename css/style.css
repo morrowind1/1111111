@@ -137,6 +137,7 @@ header {
     .project-card a {
         margin-top: auto;
         align-self: center;
+        padding: 5px 15px;
     }
     
 }
