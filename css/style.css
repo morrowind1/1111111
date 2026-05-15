@@ -116,3 +116,27 @@ header {
     margin: 40px 30px;
     border-bottom: 1px solid #444;
 }
+
+
+/* адаптация */
+@media (max-width:600px) {
+    .project-container {
+        flex-direction: column
+    }
+    .project-card {
+        min-width: unset;
+    }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-avatar {
+        margin: 0 auto;
+        display: block;
+    }
+    .project-card a {
+        margin-top: auto;
+        align-self: center;
+    }
+    
+}
