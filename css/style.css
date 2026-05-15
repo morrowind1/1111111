@@ -33,6 +33,20 @@ li {
     margin-bottom: 5px;
 }
 
+/* стили для био */
+.about-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    
+}
+
 /* стили для карточек */
 .project-card {
     background-color: #2d2d2d;
