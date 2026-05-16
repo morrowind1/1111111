@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="img/logo.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -12,7 +13,11 @@
         <!-- шапка сайта -->
     <header>
         <h1>morrowind</h1>
-        <p>Увлекаюсь созданием Telegram ботов на Python</p>
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#skills">Мои навыки</a>
+            <a href="#projects">Мои проекты</a>
+        </nav>
     </header>
 
     <!-- о проектах -->
@@ -24,6 +29,33 @@
                 <div class="about-text">
                     <h2>Обо мне</h2>
                     <p>зовут Костя, мне 20 лет, люблю компьютеры, музыку и приколы.</p>
+                    <p>Увлекаюсь созданием Telegram ботов на Python.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Мои навыки</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fa-brands fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p>GIT</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-robot"></i>
+                    <p>Aiogram3.x</p>
                 </div>
             </div>
         </section>
@@ -83,6 +115,6 @@
     </footer>
     </div>
     
-
+    <script src="js/script.js"></script>
 </body>
 </html>

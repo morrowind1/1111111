@@ -5,6 +5,11 @@ body {
     color: #f0f0f0;
     line-height: 1.6;
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+main {
+    padding-top: 20px;
 }
 
 /* стили для заголовков */
@@ -52,6 +57,35 @@ li {
     border-bottom: 1px solid #444;
 }
 
+/* стили для навыков */
+.skills-container {
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.skill-card {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 20px;
+}
+.skill-card:hover {
+    background-color: #222;
+}
+
+.skill-card i {
+    font-size: 2rem;
+}
+
 /* стили для карточек */
 .project-card {
     background-color: #2d2d2d;
@@ -81,6 +115,17 @@ li {
 
 .project-card:hover {
     background-color: #222;
+}
+
+.project-card, .skill-card {
+    opacity: 0;
+    transform: : translateX(30px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.9s ease, transform 0.5s ease;
 }
 
 /* стили для общего контейнера */
@@ -125,11 +170,25 @@ li {
 /* стили для хэдера */
 header {
     text-align: center;
-    margin: 40px 30px;
+    margin: 0 auto;
     border-bottom: 1px solid #444;
-    
+    position: sticky;
+    top: 0;
+    background-color: #1a1a1a;
+    z-index: 100;
+    max-width: 1000px;
 }
 
+section {
+    scroll-margin-top: 120px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 
 /* адаптация */
 @media (max-width:600px) {
@@ -151,6 +210,12 @@ header {
         margin-top: auto;
         align-self: center;
         padding: 5px 15px;
+    }
+    .skills-container {
+        flex-wrap: wrap;
+    }
+    .skill-card {
+        min-width: 80px;
     }
     
     
