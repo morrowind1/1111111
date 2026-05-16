@@ -162,6 +162,10 @@ li {
     margin-right: 7px;
 }
 
+.contacts a {
+    padding: 10px;
+}
+
 /* стили для враппера */
 .wrapper {
     max-width: 1000px;
