@@ -84,6 +84,7 @@ li {
 
 .skill-card i {
     font-size: 2rem;
+    margin-top: 15px;
 }
 
 /* стили для карточек */
@@ -119,12 +120,12 @@ li {
 
 .project-card, .skill-card {
     opacity: 0;
-    transform: : translateX(30px);
+    transform: translateX(30px);
 }
 
 .visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
     transition: opacity 0.9s ease, transform 0.5s ease;
 }
 
