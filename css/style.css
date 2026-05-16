@@ -121,7 +121,7 @@ li {
 
 .project-card, .skill-card {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateY(30px);
 }
 
 .visible {
