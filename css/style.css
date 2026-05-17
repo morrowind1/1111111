@@ -195,6 +195,7 @@ nav {
     display: flex;
     gap: 20px;
     justify-content: center;
+    margin-top: 40px;
 }
 
 /* стили для русурсов */
