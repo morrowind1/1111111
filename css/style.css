@@ -198,6 +198,53 @@ nav {
     margin-bottom: 10px;
 }
 
+/* стили для русурсов */
+.resource-card {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+
+.resource-card img {
+    width: 150px;
+    height: 200px;
+}
+
+.resources-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-item {
+    display: flex;
+    gap: 30px;
+}
+
+.channel-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.channel-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.resource-card:hover {
+    background-color: #222;
+}
+
+
 /* адаптация */
 @media (max-width:600px) {
     .project-container {
