@@ -26,3 +26,17 @@ navLinks.forEach((link) => {
         burger.classList.remove('active');
     });
 });
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        
+        nav.classList.remove('open');
+        burger.classList.remove('active');
+
+        setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+    });
+});
